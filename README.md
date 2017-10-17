@@ -1,2 +1,1 @@
-# bazel-repro
-reproducing bazel issues
+see subfolders

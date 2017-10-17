@@ -1,0 +1,8 @@
+package(default_visibility = ['//visibility:public'])
+
+objc_library(
+    name = 'my_objc_lib',
+    hdrs = ['mylib/MyLib.h'],
+    srcs = ['mylib/MyLib.m'],
+    includes = ['mylib'],
+)

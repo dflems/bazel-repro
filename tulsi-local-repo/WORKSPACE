@@ -1,0 +1,12 @@
+workspace(name = 'df_bzl_root')
+
+git_repository(
+    name = 'build_bazel_rules_apple',
+    remote = 'https://github.com/bazelbuild/rules_apple.git',
+    commit = '09254d2d2640a65394cb2b829cdaff148dbd7926',
+)
+
+local_repository(
+    name = 'df_bzl_local',
+    path = 'local',
+)

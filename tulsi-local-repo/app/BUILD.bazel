@@ -1,0 +1,25 @@
+package(default_visibility = ['//visibility:public'])
+load('@build_bazel_rules_apple//apple:ios.bzl', 'ios_application')
+
+objc_library(
+    name = 'HelloWorldSources',
+    srcs = [
+        'AppDelegate.h',
+        'AppDelegate.m',
+        'main.m',
+    ],
+    resources = ['Main.storyboard'],
+    deps = [
+        '@df_bzl_local//:my_objc_lib'
+    ]
+)
+
+ios_application(
+    name = 'HelloWorld',
+    bundle_id = 'com.example.hello-world',
+    families = ['iphone', 'ipad'],
+    infoplists = ['Info.plist'],
+    launch_storyboard = 'Launch.storyboard',
+    minimum_os_version = '8.0',
+    deps = [':HelloWorldSources'],
+)

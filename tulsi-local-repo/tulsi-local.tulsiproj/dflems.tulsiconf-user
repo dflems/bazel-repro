@@ -1,0 +1,10 @@
+{
+  "optionSet" : {
+    "WorkspaceRootPath" : {
+      "p" : "\/Users\/dflems\/Code\/bazel-repro\/tulsi-local-repo"
+    },
+    "BazelPath" : {
+      "p" : "\/usr\/local\/Cellar\/bazel\/0.6.1\/bin\/bazel"
+    }
+  }
+}
