@@ -1,0 +1,1 @@
+build --define=apple.experimental.tree_artifact_outputs=1
